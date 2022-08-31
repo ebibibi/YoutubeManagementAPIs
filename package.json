@@ -1,0 +1,12 @@
+{
+  "name": "youtubemanagementapis",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "func start",
+    "test": "echo \"No tests yet...\""
+  },
+  "dependencies": {
+    "googleapis": "^107.0.0"
+  }
+}
