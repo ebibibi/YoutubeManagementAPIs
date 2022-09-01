@@ -1,10 +1,7 @@
 module.exports = async function (context, req) {
-    YoutubeAPIKey = "AIzaSyB8Z8fgJi_ZXDaDkrfa2v-8GjvF8Ic8ra4"
-    YoutubeUserID = "UCtzUHamNE1ZeWDVzcO7dYBA"
-
-    if (req.body && req.body.youtubeapikey && req.body.youtubeuserid) {
-        YoutubeAPIKey = req.body.youtubeapikey
-        YoutubeUserID = req.body.youtubeuserid
+    if (req.body && req.body.YoutubeAPIKey && req.body.YoutubeUserID) {
+        YoutubeAPIKey = req.body.YoutubeAPIKey
+        YoutubeUserID = req.body.YoutubeUserID
 
         var video = await getRamdomVideo(YoutubeAPIKey, YoutubeUserID);
         context.log(video);
